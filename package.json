@@ -1,0 +1,61 @@
+{
+  "name": "ES6-base",
+  "version": "1.0.0",
+  "description": "ES6 base skelet with angular 1.5",
+  "main": "app.js",
+  "author": "Bart s.r.o.",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/router": "latest",
+    "angular": "1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-aria": "^1.5.0",
+    "angular-cookies": "^1.5.0",
+    "angular-gettext": "latest",
+    "angular-sanitize": "^1.5.0",
+    "angular-touch": "^1.5.0"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "run-sequence": "latest",
+    "gulp-rimraf": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest",
+    "gulp-rev": "latest",
+    "gulp-rev-replace": "latest",
+    "gulp-util": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-angular-templatecache": "latest",
+    "gulp-compass": "latest",
+    "gulp-ng-annotate": "latest",
+
+    "browserify": "latest",
+    "uglifyify": "latest",
+    "watchify": "latest",
+    "babelify": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-plugin-transform-runtime": "latest",
+    "babel-plugin-transform-remove-console": "latest",
+    "babel-polyfill": "latest",
+
+    "gulp-angular-gettext": "latest",
+    "vinyl-source-stream": "latest",
+
+    "modernizr": "latest",
+    "gulp-exec": "latest",
+
+    "angular-mocks": "^1.5.0"
+  },
+  "testStash": {
+    "gulp-jshint": "latest",
+
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-browserify": "^4.4.2",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "protractor": "^3.0.0",
+    "brfs": "^1.4.3"
+  }
+}

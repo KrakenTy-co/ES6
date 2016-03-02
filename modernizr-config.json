@@ -1,0 +1,21 @@
+{
+  "minify": false,
+  "classPrefix": "m-",
+  "options": [
+    "prefixed",
+    "prefixedCSS",
+    "prefixedCSSValue",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/css/flexbox",
+    "test/css/flexboxlegacy",
+    "test/css/flexboxtweener",
+    "test/css/flexwrap",
+    "test/css/reflections",
+    "test/blob",
+    "test/svg",
+    "test/css/animations",
+    "test/css/transitions"
+  ]
+}
