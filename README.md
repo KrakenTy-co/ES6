@@ -3,6 +3,7 @@
 
 ##ecmascript 6
 - https://github.com/lukehoban/es6features
+- http://www.2ality.com/2015/08/getting-started-es6.html
 - http://es6-features.org/
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla
 

@@ -6,14 +6,14 @@
   "author": "Bart s.r.o.",
   "license": "ISC",
   "dependencies": {
-    "@angular/router": "latest",
     "angular": "1.5.0",
     "angular-animate": "^1.5.0",
     "angular-aria": "^1.5.0",
     "angular-cookies": "^1.5.0",
     "angular-gettext": "latest",
     "angular-sanitize": "^1.5.0",
-    "angular-touch": "^1.5.0"
+    "angular-touch": "^1.5.0",
+    "@angular/router": "latest"
   },
   "devDependencies": {
     "gulp": "latest",
@@ -21,8 +21,6 @@
     "gulp-rimraf": "latest",
     "gulp-concat": "latest",
     "gulp-uglify": "latest",
-    "gulp-rev": "latest",
-    "gulp-rev-replace": "latest",
     "gulp-util": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-angular-templatecache": "latest",
@@ -38,15 +36,16 @@
     "babel-plugin-transform-remove-console": "latest",
     "babel-polyfill": "latest",
 
-    "gulp-angular-gettext": "latest",
     "vinyl-source-stream": "latest",
 
     "modernizr": "latest",
     "gulp-exec": "latest",
 
-    "angular-mocks": "^1.5.0"
+    "bootstrap-sass": "latest"
   },
   "testStash": {
+    "angular-mocks": "^1.5.0",
+
     "gulp-jshint": "latest",
 
     "jasmine-core": "^2.4.1",

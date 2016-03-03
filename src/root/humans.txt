@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bart.sk
+
+# THANKS
+
+    Bart.sk
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Bart s.r.o. skelet, Normalize.css, Angular, Modernizr
