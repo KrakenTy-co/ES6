@@ -1,13 +1,15 @@
 class ApplicationRoot {
 
     // @ngInject
-    constructor() {
-        this.target = 'angular';
+    constructor(applicationRootService) {
+        applicationRootService.appName = this.name;
     }
 }
 
 export default {
-    bindings: {},
+    bindings: {
+        name: '@'
+    },
     controller: ApplicationRoot,
-    template: '<div>Hello {{$ctrl.target}}!</div>'
+    templateUrl: 'components/application-root/application.root.tpl.html'
 };

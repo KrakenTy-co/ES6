@@ -1,0 +1,10 @@
+<div class="todolist">
+    <h1>Already Done</h1>
+    <ul id="done-items" class="list-unstyled" ng-repeat="task in $ctrl.arService.done.list" ng-if="$ctrl.arService.done.size">
+        <li>{{task.todo}} - {{task.date | date: 'medium'}}
+            <button class="remove-item btn btn-default btn-xs pull-right" ng-click="$ctrl.reject(task)"><span class="glyphicon glyphicon-remove"></span></button>
+        </li>
+    </ul>
+
+    <p class="text-center" ng-if="!$ctrl.arService.done.size">Empty!</p>
+</div>

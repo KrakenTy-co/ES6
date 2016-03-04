@@ -1,0 +1,25 @@
+<div class="todolist not-done">
+    <h1>Todos - {{$ctrl.arService.name}}</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <form name="todoForm" ng-submit="$ctrl.addNewTask(todoForm)">
+                <input type="text" class="form-control add-todo" name="task" ng-model="$ctrl.task" placeholder="Add todo" required>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <button id="checkAll" class="btn btn-success" ng-click="$ctrl.allDone()">Mark all as done</button>
+        </div>
+    </div>
+
+    <hr>
+    <ul id="sortable" class="list-unstyled">
+        <li class="ui-state-default" ng-repeat="task in $ctrl.arService.tasks.list">
+            <div class="checkbox">
+                <label><input type="checkbox" ng-change="$ctrl.resolve(task)" ng-model="task.done"/>{{task.todo}} - {{task.date | date: 'medium'}}</label>
+            </div>
+        </li>
+    </ul>
+    <div class="todo-footer">
+        <strong><span class="count-todos">{{$ctrl.arService.tasks.size}}</span></strong> Items Left
+    </div>
+</div>

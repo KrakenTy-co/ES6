@@ -102,7 +102,7 @@ gulp.task('copy-root', function () {
 });
 
 gulp.task('copy-font', function () {
-    return gulp.src(src + '/font/*')
+    return gulp.src(src + '/font/**/*')
         .pipe(gulp.dest(dest + '/font'));
 });
 
