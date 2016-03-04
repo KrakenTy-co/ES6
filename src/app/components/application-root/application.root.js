@@ -2,7 +2,11 @@ class ApplicationRoot {
 
     // @ngInject
     constructor(applicationRootService) {
-        applicationRootService.appName = this.name;
+        this.arService = applicationRootService;
+    }
+
+    $onInit() {
+        this.arService.appName = this.name;
     }
 }
 
