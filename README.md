@@ -13,8 +13,10 @@
 - browserify
 - gulp
 - babel
-- bootstrap
 - modernizr
+- bootstrap-sass
+- compass
+- sass (scss)
 
 ## ES6 base with angular 1.5
 
