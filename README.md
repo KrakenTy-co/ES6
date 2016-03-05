@@ -2,6 +2,7 @@
 
 ## How to start
 - install globaly npm (node.js), gulp - optional, compass (ruby)
+
 > npm install
 > gulp or ./node_modules/gulp/bin/gulp.js
 
