@@ -1,7 +1,23 @@
 # ES6
+
+## How to start
+- install globaly npm (node.js), gulp - optional, compass (ruby)
+> npm install
+> gulp or ./node_modules/gulp/bin/gulp.js
+
+## Used
+- ES6 (ES2015)
+- angular 1.5
+- npm
+- browserify
+- gulp
+- babel
+- bootstrap
+- modernizr
+
 ## ES6 base with angular 1.5
 
-##ecmascript 6
+## ecmascript 6
 - https://github.com/lukehoban/es6features
 - http://www.2ality.com/2015/08/getting-started-es6.html
 - http://es6-features.org/
