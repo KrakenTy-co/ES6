@@ -18,7 +18,7 @@
 - compass
 - sass (scss)
 
-## ES6 base with angular 1.5
+## ES6 with angular 1.5
 
 ## ecmascript 6
 - https://github.com/lukehoban/es6features
@@ -47,5 +47,3 @@
 
 ## gulp
 - https://travismaynard.com/writing/getting-started-with-gulp
-
-GOOGLE.SK
