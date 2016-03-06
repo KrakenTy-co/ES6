@@ -7,6 +7,10 @@
 
 > gulp or ./node_modules/gulp/bin/gulp.js
 
+## Presentation
+
+> https://docs.google.com/presentation/d/1iTNW1J6ivTolVrWt1LK7i4tIOpZkVaGiBWdaXCiAG5g/edit?usp=sharing
+
 ## Used
 - ES6 (ES2015)
 - angular 1.5
