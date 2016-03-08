@@ -4,7 +4,7 @@
 var x = 3;
 function func(randomize) {
     if (randomize) {
-        var x = Math.random(); // (A) scope: whole function
+        var x = 2; // (A) scope: whole function
         return x;
     }
     return x; // accesses the x from line A
@@ -16,7 +16,7 @@ func(false); // undefined
 let x = 3;
 function func(randomize) {
     if (randomize) {
-        let x = Math.random();
+        let x = 2;
         return x;
     }
     return x;
@@ -26,29 +26,6 @@ func(false); // 3
 
 
 
-
-
-
-
-
-
-
-
-// ES5 - From IIFEs to blocks
-
-(function () {  // open IIFE
-    var tmp = 'foo';
-}());  // close IIFE
-
-console.log(tmp); // ReferenceError
-
-// ES6 - From IIFEs to blocks
-
-{  // open block
-    let tmp = 'bar';
-}  // close block
-
-console.log(tmp); // ReferenceError
 
 
 
@@ -72,6 +49,40 @@ function printCoord(x, y) {
 function printCoord(x, y) {
     console.log(`(${x}, ${y})`);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ES5 - Handling parameter default values
+
+function foo(x, y) {
+    x = x || 0;
+    y = y || 0;
+}
+
+
+// ES6 - Handling parameter default values
+
+function foo(x=0, y=0) {
+}
+
+
+
+
+
 
 
 

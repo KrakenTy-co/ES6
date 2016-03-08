@@ -1,15 +1,24 @@
-# ES6
+# ES2015 (+ Angular 1.5)
+
+This repo serves as a minimal starter for those looking to get up-and-running with Angular and ES6, using Gulp with Babel and Browserify for the build process.
+It's a minimal starter with tasks for building the boilerplate.
+Also is there some useful examples to illustrate how is ES6 different to ES5.
+
+## ES2015
+ECMAScript 6, also known as ECMAScript 2015, is the latest version of the ECMAScript standard. ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
+
+## Angular
+AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+
+AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. 
 
 ## How to start
-- install globaly npm (node.js), gulp - optional, compass (ruby)
+- install globaly `npm` (node.js), `gulp` - optional, `compass` (ruby)
 
 > npm install
 
 > gulp or ./node_modules/gulp/bin/gulp.js
 
-## Presentation
-
-> https://docs.google.com/presentation/d/1iTNW1J6ivTolVrWt1LK7i4tIOpZkVaGiBWdaXCiAG5g/edit?usp=sharing
 
 ## Used
 - ES6 (ES2015)
@@ -23,7 +32,12 @@
 - compass
 - sass (scss)
 
-## ES6 with angular 1.5
+## Presentation
+
+> https://docs.google.com/presentation/d/1iTNW1J6ivTolVrWt1LK7i4tIOpZkVaGiBWdaXCiAG5g/edit?usp=sharing
+
+
+# Useful materials
 
 ## ecmascript 6
 - https://github.com/lukehoban/es6features

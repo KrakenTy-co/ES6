@@ -12,12 +12,12 @@ import './app/vendor/modernizr/modernizr';
 import components from './app/components/module';
 
 angular.module('es6', [
-        'templates',
         animate,
         cookies,
         sanitize,
         aria,
         touch,
+        'templates',
         components
     ])
 

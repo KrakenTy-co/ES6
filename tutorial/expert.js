@@ -34,6 +34,8 @@ class Person {
 
 
 
+
+
 // ES5 - Derived classes
 
 function Employee(name, title) {
@@ -77,19 +79,21 @@ class Employee extends Person {
 
 
 
+
+
+
 // ES5 - From function expressions to arrow functions
 
 function UiComponent() {
     var _this = this; // (A)
+
     var button = document.getElementById('myButton');
+
     button.addEventListener('click', function (event) {
-        event.preventDefault();
-        console.log('CLICK');
         _this.handleClick(); // (B)
     });
 }
-UiComponent.prototype.handleClick = function () {
-};
+UiComponent.prototype.handleClick = function () {};
 
 
 // ES6 - From function expressions to arrow functions
@@ -97,14 +101,12 @@ UiComponent.prototype.handleClick = function () {
 class UiComponent {
     constructor() {
         let button = document.getElementById('myButton');
+
         button.addEventListener('click', (event) => {
-            event.preventDefault();
-            console.log('CLICK');
             this.handleClick(); // (A)
         });
     }
-    handleClick() {
-    }
+    handleClick() {}
 }
 
 
@@ -123,60 +125,6 @@ class UiComponent {
 
 
 
-
-// ES5 - From function expressions in object literals to method definitions
-
-var obj = {
-    foo: function () {
-    },
-    bar: function () {
-        this.foo();
-    }
-};
-
-
-// ES6 - From function expressions in object literals to method definitions
-
-let obj = {
-    foo() {
-    },
-    bar() {
-        this.foo();
-    }
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ES5 - Errors, Map, Set, WeakMap, WeakSet
-
-function MyError() {
-    // Use Error as a function
-    var superInstance = Error.apply(null, arguments);
-    copyOwnPropertiesFrom(this, superInstance);
-}
-MyError.prototype = Object.create(Error.prototype);
-MyError.prototype.constructor = MyError;
-
-
-// ES6 - Errors, Map, Set, WeakMap, WeakSet
-
-class MyError extends Error {
-}
 
 // ES5 - Errors, Map, Set, WeakMap, WeakSet
 
@@ -209,10 +157,38 @@ function isIn(data, find) {
 
 console.log(isIn(data, find)); // false
 
+
+
+
 // PS
 
 var myMap = new Map([["key1", "value1"], ["key2", "value2"]]); // Use the regular Map constructor to transform a 2D key-value Array into a map
 myMap.get("key1"); // returns "value1"
+
+
+
+
+
+// x2
+// ES5 - Errors, Map, Set, WeakMap, WeakSet
+
+function MyList() {
+    // Use Map as a function
+    var superInstance = Map.apply(null, arguments);
+    copyOwnPropertiesFrom(this, superInstance);
+}
+MyList.prototype = Object.create(Map.prototype);
+MyList.prototype.constructor = MyList;
+
+
+// ES6 - Errors, Map, Set, WeakMap, WeakSet
+
+class MyList extends Map {
+}
+
+
+
+
 
 
 
