@@ -125,7 +125,7 @@ gulp.task('template-cache', function () {
 });
 
 gulp.task('minify', function () {
-    var result = gulp.src([dest + 'tpl/templates.js', dest + '/lib/app.js']);
+    var result = gulp.src([dest + '/lib/app.js']);
     if (doSourceMaps) {
         result = result.pipe(sourcemaps.init({loadMaps: true}));
     }
@@ -137,7 +137,7 @@ gulp.task('minify', function () {
         }));
     }
     result = result.pipe(uglify({
-        mangle: true
+        mangle: false
     }));
     if (doSourceMaps) {
         result = result.pipe(sourcemaps.write());
