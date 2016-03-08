@@ -110,6 +110,10 @@ class UiComponent {
 }
 
 
+let odds = evens.map(v => v + 1);
+let nums = evens.map((v, i) => v + i);
+
+
 
 
 
