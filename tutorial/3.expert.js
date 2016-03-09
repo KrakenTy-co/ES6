@@ -80,15 +80,35 @@ class Employee extends Person {
 
 
 
+// ES5 - From function expressions to arrow functions
 
+var odds = evens.map(function(v) {
+    return v + 1;
+});
+var nums = evens.map(function(v, i) {
+    return v + i;
+});
+
+// ES6 - From function expressions to arrow functions
+
+let odds = evens.map(v => v + 1);
+let nums = evens.map((v, i) => v + i);
+
+
+
+
+
+
+
+
+
+// v2
 
 // ES5 - From function expressions to arrow functions
 
 function UiComponent() {
     var _this = this; // (A)
-
     var button = document.getElementById('myButton');
-
     button.addEventListener('click', function (event) {
         _this.handleClick(); // (B)
     });
@@ -101,17 +121,12 @@ UiComponent.prototype.handleClick = function () {};
 class UiComponent {
     constructor() {
         let button = document.getElementById('myButton');
-
         button.addEventListener('click', (event) => {
             this.handleClick(); // (A)
         });
     }
     handleClick() {}
 }
-
-
-let odds = evens.map(v => v + 1);
-let nums = evens.map((v, i) => v + i);
 
 
 
