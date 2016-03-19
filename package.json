@@ -6,13 +6,13 @@
   "author": "Bart s.r.o.",
   "license": "ISC",
   "dependencies": {
-    "angular": "1.5.0",
-    "angular-animate": "^1.5.0",
-    "angular-aria": "^1.5.0",
-    "angular-cookies": "^1.5.0",
+    "angular": "1.5.2",
+    "angular-animate": "^1.5.2",
+    "angular-aria": "^1.5.2",
+    "angular-cookies": "^1.5.2",
     "angular-gettext": "latest",
-    "angular-sanitize": "^1.5.0",
-    "angular-touch": "^1.5.0",
+    "angular-sanitize": "^1.5.2",
+    "angular-touch": "^1.5.2",
     "@angular/router": "latest"
   },
   "devDependencies": {
@@ -31,9 +31,11 @@
     "uglifyify": "latest",
     "watchify": "latest",
     "babelify": "latest",
+    "babel-core": "latest",
+    "tsify": "latest",
     "babel-preset-es2015": "latest",
-    "babel-plugin-transform-runtime": "latest",
     "babel-plugin-transform-remove-console": "latest",
+    "babel-plugin-transform-remove-debugger": "latest",
     "babel-polyfill": "latest",
 
     "vinyl-source-stream": "latest",

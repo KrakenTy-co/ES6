@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var compass = require('gulp-compass');
 
 var babelify = require('babelify');
+var tsify = require('tsify');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var gutil = require('gulp-util');
@@ -21,9 +22,13 @@ var exec = require('gulp-exec');
 var src = 'src';
 var dest = 'public';
 
+var target = 'app.js';
+var output = 'app.js';
+
+var typescript = false;
+
 var doSourceMaps = true;
 var doAnotate = false;
-var getTextModule = 'es6text';
 
 // compile + watch script
 function buildScript(file, watch, final) {
@@ -36,24 +41,32 @@ function buildScript(file, watch, final) {
     };
 
     var bundler = browserify(props);
+    if (typescript) {
+        bundler.plugin(tsify, {
+            module: "system",
+            noImplicitAny: true
+        });
+    }
     if (watch) {
         bundler.plugin(watchify);
     }
 
-    if (final == undefined || final == false) {
-        bundler.transform(babelify, {
-            presets: ["es2015"]
-        });
-    } else {
-        bundler.transform(babelify, {
-            presets: ["es2015"],
-            plugins: ["transform-runtime", "transform-remove-console"]
-        });
+    if (!typescript) {
+        if (final == undefined || final == false) {
+            bundler.transform(babelify, {
+                presets: ["es2015"]
+            });
+        } else {
+            bundler.transform(babelify, {
+                presets: ["es2015"],
+                plugins: ["transform-remove-console", "transform-remove-debugger"]
+            });
+        }
     }
     function bundle() {
         return bundler.bundle()
             .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-            .pipe(source('app.js'))
+            .pipe(source(output))
             .pipe(gulp.dest(dest + '/lib'));
     }
 
@@ -68,15 +81,15 @@ function buildScript(file, watch, final) {
 }
 
 gulp.task('transpile', function () {
-    return buildScript(src + '/app.js', false, false);
+    return buildScript(src + '/' + target, false, false);
 });
 
 gulp.task('transpile-watch', function () {
-    return buildScript(src + '/app.js', true, false);
+    return buildScript(src + '/' + target, true, false);
 });
 
 gulp.task('transpile-final', function () {
-    return buildScript(src + '/app.js', false, true);
+    return buildScript(src + '/' + target, false, true);
 });
 
 // Compile Our Sass
@@ -117,11 +130,11 @@ gulp.task('copy-favicon', function () {
 });
 
 gulp.task('template-cache', function () {
-    return gulp.src(src + '/app/**/*tpl.html')
+    return gulp.src(src + '/app/components/**/*tpl.html')
         .pipe(templateCache('templates.js', {
             standalone: true
         }))
-        .pipe(gulp.dest(dest + '/tpl'));
+        .pipe(gulp.dest(src + '/tpl'));
 });
 
 gulp.task('minify', function () {
@@ -152,7 +165,7 @@ gulp.task('watch', function () {
     gulp.watch(src + '/root/*', ['copy-root']);
     gulp.watch(src + '/app/page/**/*.html', ['copy-page']);
 
-    return buildScript(src + '/app.js', true, false);
+    return buildScript(src + '/' + target, true, false);
 });
 
 gulp.task("modernizr-compile", function () {

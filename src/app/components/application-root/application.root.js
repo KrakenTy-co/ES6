@@ -15,5 +15,5 @@ export default {
         name: '@'
     },
     controller: ApplicationRoot,
-    templateUrl: 'components/application-root/application.root.tpl.html'
+    templateUrl: 'application-root/application.root.tpl.html'
 };

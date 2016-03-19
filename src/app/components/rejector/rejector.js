@@ -17,5 +17,5 @@ class Rejector {
 export default {
     bindings: {},
     controller: Rejector,
-    templateUrl: 'components/rejector/rejector.tpl.html'
+    templateUrl: 'rejector/rejector.tpl.html'
 };

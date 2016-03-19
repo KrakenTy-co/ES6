@@ -34,5 +34,5 @@ class Creator {
 export default {
     bindings: {},
     controller: Creator,
-    templateUrl: 'components/creator/creator.tpl.html'
+    templateUrl: 'creator/creator.tpl.html'
 };

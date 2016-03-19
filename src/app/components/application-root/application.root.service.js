@@ -1,4 +1,4 @@
-import MapList from '../map.list';
+// import MapList from '../map.list';
 
 export default class ApplicationRootService {
 
@@ -6,8 +6,8 @@ export default class ApplicationRootService {
     constructor() {
         this.appName = null;
 
-        this.tasks = new MapList();
-        this.done = new MapList();
+        this.tasks = new Map();
+        this.done = new Map();
     }
 
 

@@ -17,7 +17,8 @@ AngularJS is a toolset for building the framework most suited to your applicatio
 
 > npm install
 
-> gulp or ./node_modules/gulp/bin/gulp.js
+> gulp or ./node_modules/gulp/bin/gulp.js or node ./node_modules/gulp/bin/gulp.js
+
 
 
 ## Used
