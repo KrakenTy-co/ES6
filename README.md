@@ -13,6 +13,8 @@ AngularJS lets you extend HTML vocabulary for your application. The resulting en
 AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. 
 
 ## How to start
+nodejs - https://nodejs.org/en/
+
 - install globaly `npm` (node.js), `gulp` - optional, `compass` (ruby)
 
 > npm install
