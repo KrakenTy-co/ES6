@@ -6,14 +6,15 @@
   "author": "Bart s.r.o.",
   "license": "ISC",
   "dependencies": {
-    "angular": "1.5.2",
-    "angular-animate": "^1.5.2",
-    "angular-aria": "^1.5.2",
-    "angular-cookies": "^1.5.2",
+    "angular": "1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-cookies": "^1.5.5",
     "angular-gettext": "latest",
-    "angular-sanitize": "^1.5.2",
-    "angular-touch": "^1.5.2",
-    "@angular/router": "latest"
+    "angular-sanitize": "^1.5.5",
+    "angular-touch": "^1.5.5",
+    "@angular/router": "latest",
+    "jquery": "2.2.3"
   },
   "devDependencies": {
     "gulp": "latest",
@@ -43,6 +44,20 @@
     "modernizr": "latest",
     "gulp-exec": "latest",
 
-    "bootstrap-sass": "latest"
+    "bootstrap-sass": "latest",
+
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-jasmine": "^0.3.8",
+    "karma-browserify": "^5.0.4",
+    "karma-ng-html2js-preprocessor": "^0.2.2",
+    "karma-mocha-reporter": "2.0.2",
+    "mocha": "2.4.5",
+    "chai": "3.5.0",
+    "protractor": "^3.3.0",
+    "brfs": "^1.4.3",
+    "angular-mocks": "^1.5.5"
   }
 }
