@@ -1,4 +1,4 @@
-class ApplicationRoot {
+export class ApplicationRoot {
 
     // @ngInject
     constructor(applicationRootService) {

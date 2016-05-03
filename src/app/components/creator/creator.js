@@ -1,4 +1,4 @@
-class Creator {
+export class Creator {
 
     // @ngInject
     constructor(applicationRootService) {
@@ -19,7 +19,7 @@ class Creator {
     }
 
     resolve(task = null) {
-        if(this.arService.tasks.has(task.date)) {
+        if(task && this.arService.tasks.has(task.date)) {
             this.arService.tasks.delete(task.date);
             this.arService.done.set(task.date, task);
         }

@@ -5,6 +5,9 @@
   "main": "app.js",
   "author": "Bart s.r.o.",
   "license": "ISC",
+  "scripts": {
+    "karma": "karma start"
+  },
   "dependencies": {
     "angular": "1.5.5",
     "angular-animate": "^1.5.5",
@@ -49,15 +52,17 @@
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.3",
-    "karma-phantomjs-launcher": "^1.0.0",
     "karma-jasmine": "^0.3.8",
     "karma-browserify": "^5.0.4",
     "karma-ng-html2js-preprocessor": "^0.2.2",
+    "brfs": "^1.4.3",
+    "angular-mocks": "^1.5.5"
+  },
+  testStash: {
+    "karma-phantomjs-launcher": "^1.0.0",
     "karma-mocha-reporter": "2.0.2",
     "mocha": "2.4.5",
     "chai": "3.5.0",
     "protractor": "^3.3.0",
-    "brfs": "^1.4.3",
-    "angular-mocks": "^1.5.5"
   }
 }
