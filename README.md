@@ -43,7 +43,7 @@ nodejs - https://nodejs.org/en/
 
 ### Unit Test
 
-> https://docs.google.com/presentation/d/16x7FnLx1EZL5H3zGLLhm1SgdMD19TKfuLT7jd_egj3w/edit#slide=id.g10d2a900c8_0_2
+> https://docs.google.com/presentation/d/16x7FnLx1EZL5H3zGLLhm1SgdMD19TKfuLT7jd_egj3w/edit?usp=sharing
 
 
 # Useful materials
