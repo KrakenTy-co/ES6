@@ -37,7 +37,13 @@ nodejs - https://nodejs.org/en/
 
 ## Presentation
 
+### ES6 + Angular
+
 > https://docs.google.com/presentation/d/1iTNW1J6ivTolVrWt1LK7i4tIOpZkVaGiBWdaXCiAG5g/edit?usp=sharing
+
+### Unit Test
+
+> https://docs.google.com/presentation/d/16x7FnLx1EZL5H3zGLLhm1SgdMD19TKfuLT7jd_egj3w/edit#slide=id.g10d2a900c8_0_2
 
 
 # Useful materials
